@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Brain Stem</title>
+		<link href="general.css" rel="stylesheet">
+	</head>
+	<body class="parts">
+		<a id="back" class="back" href="lobes.html">Back</a>
+		
+		<h1 class="title">Brain Parts</h1>
+		
+		<div id="storyline">
+		
+			<p class="description" id="description"> Match the part of the brain with its location on the brain! 
+				Enter the corresponding letters of each term in the order given by the numbers on the image. 
+				Answer in all caps.</p>
+			
+			<span class="input">
+				<input type="text" placeholder="Type something..." id="myInput">
+				<button class="submit" type="button" onclick="getInputValueP();">Submit</button>
+				<p id="feedback"> </p>
+			</span>
+			
+			<a class="next" id="openLimbic" href="end.html">Congratulations!</a>
+		</div>
+		
+		<a class="brain1 brainPart"></a>			
+		<a class="brain2 brainPart"></a>
+		<a class="book brainPart"></a>
+		
+		
+		<table class="table">
+			<tr class="row">
+				<td class="labeledImage" id="labeledImage">
+					<img id="labelImage" src="images/brainParts1.png" width="400px" height="250px">
+				</td>
+				
+				<td class="descriptionBox">
+					<h3>Brain Parts</h3>
+					<table class="t2">
+						<tr class="r2">
+							<td class="d2">
+								<ol type="a" id="list1">
+									<li><u>Occipital Lobes:</u> The occipital lobe is the visual processing area 
+									of the brain. It is associated with visuospatial processing, distance and 
+									depth perception, color determination, object and face recognition, and memory 
+									formation.
+									</li>
+									<li><u>Motor Cortex:</u> The primary function of the motor cortex is to 
+									generate signals to direct the movement of the body. 
+									</li>
+									<li><u>Frontal Lobes:</u> As the largest lobes in the brain, the frontal 
+									lobes are important for voluntary movement, expressive language and for 
+									managing higher level executive functions. 
+									</li>
+								</ol>
+							</td>
+							<td>
+								<ol type="a" start="5" id="list2">
+									<li><u>Temporal Lobes:</u> The Temporal lobe, which is inside your skull near 
+									your temples and ears, plays a role in managing your emotions, processing 
+									information from your senses, storing and retrieving memories, and 
+									understanding language.
+									</li>
+									<li><u>Parietal Lobes:</u> The parietal lobes are primarily responsible for 
+									receiving and processing sensory input such as touch, pressure, heat, cold, 
+									and pain. 
+									</li>
+									<li><u>Sensory Cortex:</u> The sensory cortex includes portions of the 
+									cerebral cortex, that wrinkly outer layer of the brain that process and make 
+									sense out of information gathered by our five senses.
+									</li>
+								</ol>
+							</td>
+						</tr>
+					</table>
+				</td>	
+			</tr>
+		</table>
+		
+		<p id="l1"><u><b>1</b></u></p>
+		<p id="l2"><u><b>2</b></u></p>
+		<p id="l3"><u><b>3</b></u></p>
+		<p id="l4"><u><b>4</b></u></p>
+		<p id="l5"><u><b>5</b></u></p>
+		<p id="l6"><u><b>6</b></u></p>
+		
+		
+		
+		<div id="timer"></div>
+		
+		<script src="general.js"></script>
+	</body>
+</html>

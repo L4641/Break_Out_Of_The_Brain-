@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Brain Stem</title>
+		<link href="general.css" rel="stylesheet">
+	</head>
+	<body class="brainStem" onclick="checkBS(); closeAll();">
+		<a class="back" href="index.html">Back</a>
+		
+		<h1 class="title">Brain Stem</h1>
+		
+		<a onclick="openRF()" class="clock brainPart"></a>			
+		<a onclick="openPons()" class="pillow brainPart"></a>
+		<a onclick="openMedulla()" class="wind brainPart"></a>
+		<a onclick="openThalamus()" class="calendar brainPart"></a>
+		<a onclick="openCerebellum()" class="doll brainPart"></a>
+		
+		<div id = "RF" class="smallWindow">
+			<h3>Reticular Formation</h3>
+			<p> The <u>Reticular Formation</u> controls arousal, alertness, and attention. It is what regulates 
+				the	sleep cycle. 
+				<br>
+				<br>
+				What analogy best suits the function of the <u>reticular formation</u>?
+				<br>
+				F) swiss army knife W) "mini brain" M) alarm clock F) paper
+			  </p>
+			  <img src="images/RF.png">
+		</div>
+		
+		<div id = "pons" class="smallWindow">
+			<h3>Pons</h3>
+			<p> The <u>Pons</u> aids in many different functions but it most known for relaying info from 
+				the cerebrum to the brain's more developed parts.
+				<br>
+				<br>
+				The <u>pons</u> is the link between what two other parts of the brainstem?
+				<br>
+				R) medulla C) reticular formation I) thalamus D) hippocampus
+			  </p>
+			  <img src="images/pons.png">
+		</div>
+		
+		<div id = "medulla" class="smallWindow">
+			<h3>Medulla</h3>
+			<p>Medulla is the base of the brainstem and is responsible for controlling heartbeat and breathing.
+				<br>
+				<br>
+				The <u>medulla</u> helps regulate:
+				<br>
+				N) breathing V) heart rate R) blood pressure P) all of the above 
+			  </p>
+			<img src="images/medulla.png">
+		</div>
+		
+		<div id = "thalamus" class="smallWindow">
+			<h3>Thalamus</h3>
+			<p> The <u>Thalamus</u> deals with all senses but smell. Sensory neurons send synapses to the 
+				thalamus which directs it to the different cortices. 
+				<br>
+				<br>
+				What does the <u>Thalamus</u> control?
+				<br>
+				D) interpret smell L) interpret sound F) consciousness W) breathing
+			  </p>
+			  <img src="images/thalamus.png">
+		</div>
+		
+		<div id = "cerebellum" class="smallWindow">
+			<h3>Cerebellum</h3>
+			<p> The <u>Cerebellum</u> is responsible for movement and balance and helps coordinate implicit 
+				voluntary movement.
+				 <br>
+				 <br>
+				 What action(s) does the <u>Cerebellum</u> control?
+				 <br>
+				 G) breathing A) walking J) heartbeat K) all of the above
+			  </p>
+			  <img src="images/cerebellum.png">
+		</div>
+		
+		<div id="storyline">
+		
+			<p class="description"> Is this a dream? Hello? It appears you are stuck in your own brain. You 
+				could exist the rest of your human life here if you don't revive it. In order to do so, 
+				you must escape the brain. Find clues relating to each part of the brain that the room is 
+				assigned to. By answering the questions for each part of the brain, you can find the key 
+				to this room. Unscramble the letters corresponding to each multiple choice answer to find 
+				the key. If you don’t make it out in time, you are stuck in this dream forever. 
+				Good Luck!</p>
+			
+			<span class="input">
+				<input type="text" placeholder="Type something..." id="myInput">
+				<button class="submit" type="button" onclick="getInputValueBrainStem();">Submit</button>
+				<p id="feedback"> </p>
+			</span>
+			
+			<a class="next" id="openLimbic" href="limbic.html">Next Room</a>
+			
+		</div>
+		
+		<div id="timer"></div>
+		
+		<script src="general.js"></script>
+		
+		<script>
+			document.addEventListener('keypress', function(event) {
+			    const key = event.key;			  
+			    if (key === 'q' || key === 'Q') {
+			        window.location.href = "limbic.html";
+			    }
+			});
+		</script>
+	</body>
+</html>

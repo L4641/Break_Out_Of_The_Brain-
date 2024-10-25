@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Limic System</title>
+		<link href="general.css" rel="stylesheet">
+	</head>
+	<body class="limbic" onclick="checkLS(); closeAll();">
+		<a class="back" href="brainStem.html">Back</a>
+		
+		<h1 class="title">Limbic System</h1>
+		
+		<div id="storyline">
+		
+			<p class="description">Congrats! You are now in the Limbic system, for the next step of your journey 
+				you will need to break out of this room just like you did for the brainstem. Time is running out! 
+				Hurry! </p>
+			
+			<span class="input">
+				<input type="text" placeholder="Type something..." id="myInput">
+				<button class="submit" type="button" onclick="getInputValueLimbic();">Submit</button>
+				<p id="feedback"> </p>
+			</span>
+			
+			<a class="next" id="openLimbic" href="lobes.html">Next Room</a>
+			
+		</div>
+		
+		<a onclick="openAmygdala()" class="candle brainPart"></a>			
+		<a onclick="openHippocampus()" class="photo brainPart"></a>
+		<a onclick="openPituitaryGland()" class="remote brainPart"></a>
+		<a onclick="openHypothalamus()" class="thermostat brainPart"></a>
+		
+		
+		
+		<div id = "amygdala" class="smallWindow">
+			<h3>Amygdala</h3>
+			<p> The <u>amygdala</u> is responsible for the perception of emotions such as anger, fear, and 
+				sadness, as well as the controlling of aggression. 
+				<br>
+				<br>
+				What emotion is the <u>Amygdala</u> most closely associated with?
+				<br>
+				F) euphoria M) fear C) depression E) excitement
+			  </p>
+			  <img src="images/amygdala.webp">
+		</div>
+		
+		<div id = "hippocampus" class="smallWindow">
+			<h3>Hippocampus</h3>
+			<p> The <u>hippocampus</u> is involved in long-term memory formation and memory retrieval. It also 
+				plays a role in spatial memory.
+				<br>
+				<br>
+				What is the <u>hippocampus</u> most responsible for?				 
+				<br>
+				L) involuntary movement B) fear/anger P) regulating endocrine system O) memory
+			  </p>
+			  <img src="images/hippocampus.jpg">
+		</div>
+		
+		<div id = "pituitaryGland" class="smallWindow">
+			<h3>Pituitary Gland</h3>
+			<p> The <u>pituitary gland</u> is known as the “master gland” since it monitors and regulates 
+				bodily functions through produced hormones, including: Growth & sexual/reproductive development 
+				& function.
+				<br>
+				<br>
+				What part of the brain controls the <u>Pituitary gland</u>? 
+				<br>
+				 O) hypothalamus C) amygdala H) prefrontal cortex D) pons
+			  </p>
+			<img src="images/pituitaryGland.png">
+		</div>
+		
+		<div id = "hypothalamus" class="smallWindow">
+			<h3>Hypothalamus</h3>
+			<p> The <u>hypothalamus</u> helps manage your body temperature, hunger and thirst, mood, sex drive, 
+				blood pressure and sleep.
+				<br>
+				<br>
+				<u>Hypothalamus</u> means _____ the thalamus?
+				<br>
+				A) above B) inside D) below F) next to
+			  </p>
+			  <img src="images/hypothalamus.png">
+		</div>
+		
+		<div id="timer"></div>
+		
+		<script src="general.js"></script>
+		
+		<script>
+			document.addEventListener('keypress', function(event) {
+			    const key = event.key;			  
+			    if (key === 'q' || key === 'Q') {
+			        window.location.href = "lobes.html";
+			    }
+			});
+		</script>
+	</body>
+</html>

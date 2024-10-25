@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Brain Stem</title>
+		<link href="general.css" rel="stylesheet">
+	</head>
+	<body class="hemispheres">
+		<a id="back" class="back" href="lobes.html">Back</a>
+		
+		<h1 class="title">Hemispheres</h1>
+		
+		<div id="storyline">
+		
+			<p class="description"> Mix and match what belongs in the left hemisphere and what belongs in the
+				right hemisphere! Once you have the sorted letters enter the letters for the left hemisphere first
+				and then the letters for the right hemisphere all caps no spaces.</p>
+			
+			<span class="input">
+				<input type="text" placeholder="Type something..." id="myInput">
+				<button class="submit" type="button" onclick="getInputValueH();">Submit</button>
+				<p id="feedback"> </p>
+			</span>
+			
+			<a class="next" id="openLimbic" href="end.html">Congratulations!</a>
+		</div>
+		
+		<a class="brain1 brainPart"></a>			
+		<a class="brain2 brainPart"></a>
+		<a class="book brainPart"></a>
+		
+		
+		<table class="table">
+			<tr class="row">
+				<td class="labeledImage">
+					<img src="images/hemispheres.png" width="600px" height="355px">
+				</td>					
+				
+				<td class="descriptionBox">
+					<h3>Word Bank</h3>
+					<table class="t2">
+						<tr class="r2">
+							<td class="d2">
+								<ol type="a">
+									<li>Speech</li>
+									<li>Comprehension</li>
+									<li>Musical Skills</li>
+									<li>Artistic</li>
+								</ol>
+							</td>
+							<td>
+								<ol type="a" start="5">
+									<li>Arithmetic</li>
+									<li>Creativity</li>
+									<li>Spatial ability</li>
+									<li>Writing</li>
+								</ol>
+							</td>
+						</tr>
+					</table>
+					
+					<p id="rlh"></p>
+				</td>	
+			</tr>
+		</table>
+		
+		<p class="left">Left Hemisphere</p>
+		<p class="left1">Left Hemisphere</p>
+		<p class="right">Right Hemisphere</p>
+		
+		<div id="timer"></div>
+
+		<script src="general.js"></script>
+	</body>
+</html>

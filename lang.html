@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Brain Stem</title>
+		<link href="general.css" rel="stylesheet">
+	</head>
+	<body class="lang">
+		<a id="back" class="back" href="lobes.html">Back</a>
+		
+		<h1 class="title">Language</h1>
+		
+		<div id="storyline">
+		
+			<p class="description" id="description"> Use the morse code key on the left to translate the morse
+				code in the audio file to its message. Enter the message in all caps to solve this puzzle! </p>
+			
+			<span class="input">
+				<input type="text" placeholder="Type something..." id="myInput">
+				<button class="submit" type="button" onclick="getInputValueL();">Submit</button>
+				<p id="feedback"> </p>
+			</span>
+			
+			<a class="next" id="openLimbic" href="end.html">Congratulations!</a>
+		</div>
+		
+		<a class="brain1 brainPart"></a>			
+		<a class="brain2 brainPart"></a>
+		<a class="book brainPart"></a>
+		
+		
+		<table class="table">
+			<tr class="row">
+				<td class="labeledImage" id="labeledImage">
+					<img id="labelImage" src="images/mct.webp" width="400px" height="250px">
+					<img id="ac" src="images/ac.png" width="193px" height="125px">
+					<img id="ba" src="images/ba.png" width="193px" height="125px">
+					<img id="vc" src="images/vc.png" width="193px" height="125px">
+					<img id="ag" src="images/ag.png" width="193px" height="125px">
+					<img id="wa" src="images/wa.png" width="193px" height="125px">
+				</td>
+				
+				<td class="descriptionBox">
+					<h3>Language & Some Senses</h3>
+					<table class="t2">
+						<tr class="r2">
+							<td class="d2">
+								<ol type="a" id="list1">
+									<li><u>Auditory Cortex:</u> The auditory cortex is the part of the temporal 
+									lobe that processes auditory information and performs basic and higher 
+									functions in hearing, such as possible relations to language switching. 
+									</li>
+									<li><u>Visual Cortex:</u> The primary purpose of the visual cortex is to 
+									receive, segment, and integrate visual information. 
+									</li>
+									<li><u>Wernicke's Area:</u>  Wernicke's area controls the ability to 
+									understand the meaning of words.
+									</li>
+								</ol>
+							</td>
+							<td>
+								<ol type="a" start="5" id="list2">
+									<li><u>Brocas Area:</u> In addition to serving a role in speech production, 
+									the Broca area also is involved in language comprehension, in motor-related 
+									activities associated with hand movements, and in sensorimotor learning and 
+									integration.
+									</li>
+									<li><u>Angular Gyrus:</u> The Angular Gyrus is the region of the brain that 
+									is associated with complex language related functions (e.g. reading, writing) 
+									and being able to make sense of the meaning and content of written words.
+									</li>
+								</ol>
+							</td>
+						</tr>
+					</table>
+					
+					<audio controls autoplay muted class="audio">
+						<source src="images/morseCode.wav" type="audio/wav">
+					</audio>
+					
+				</td>	
+			</tr>
+		</table>
+		
+		<div id="timer"></div>
+		
+		<script src="general.js"></script>
+	</body>
+</html>
